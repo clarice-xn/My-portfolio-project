@@ -1,0 +1,1545 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <title>Clarice</title>
+    <link rel="icon" href="./shooting_star_icon_182905.ico" />
+    <meta property="og:title" content="Informal Complex Mole" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {
+        line-height: 1.15;
+      }
+      body {
+        margin: 0;
+      }
+      * {
+        box-sizing: border-box;
+        border-width: 0;
+        border-style: solid;
+        -webkit-font-smoothing: antialiased;
+      }
+      p,
+      li,
+      ul,
+      pre,
+      div,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      figure,
+      blockquote,
+      figcaption {
+        margin: 0;
+        padding: 0;
+      }
+      button {
+        background-color: transparent;
+      }
+      button,
+      input,
+      optgroup,
+      select,
+      textarea {
+        font-family: inherit;
+        font-size: 100%;
+        line-height: 1.15;
+        margin: 0;
+      }
+      button,
+      select {
+        text-transform: none;
+      }
+      button,
+      [type="button"],
+      [type="reset"],
+      [type="submit"] {
+        -webkit-appearance: button;
+        color: inherit;
+      }
+      button::-moz-focus-inner,
+      [type="button"]::-moz-focus-inner,
+      [type="reset"]::-moz-focus-inner,
+      [type="submit"]::-moz-focus-inner {
+        border-style: none;
+        padding: 0;
+      }
+      button:-moz-focus,
+      [type="button"]:-moz-focus,
+      [type="reset"]:-moz-focus,
+      [type="submit"]:-moz-focus {
+        outline: 1px dotted ButtonText;
+      }
+      a {
+        color: inherit;
+        text-decoration: inherit;
+      }
+      pre {
+        white-space: normal;
+      }
+      input {
+        padding: 2px 4px;
+      }
+      img {
+        display: block;
+      }
+      details {
+        display: block;
+        margin: 0;
+        padding: 0;
+      }
+      summary::-webkit-details-marker {
+        display: none;
+      }
+      [data-thq="accordion"] [data-thq="accordion-content"] {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+        padding: 0;
+      }
+      [data-thq="accordion"]
+        details[data-thq="accordion-trigger"][open]
+        + [data-thq="accordion-content"] {
+        max-height: 1000vh;
+      }
+      details[data-thq="accordion-trigger"][open]
+        summary
+        [data-thq="accordion-icon"] {
+        transform: rotate(180deg);
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 1rem;
+      }
+
+      body {
+        font-weight: 400;
+        font-style: normal;
+        text-decoration: undefined;
+        text-transform: undefined;
+        letter-spacing: normal;
+        line-height: 1.55;
+        color: var(--color-on-surface);
+        background: var(--color-surface);
+
+        fill: var(--color-on-surface);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200;300;400;500;600;700;800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./index.css" rel="stylesheet" />
+
+      <div class="home-container10">
+        <navigation-wrapper class="navigation-wrapper">
+          <!--Navigation component-->
+          <div class="navigation-container1">
+            <nav
+              id="navigation"
+              aria-label="Điều hướng chính"
+              class="navigation"
+            >
+              <div class="navigation__container">
+                <a href="index.html">
+                  <div aria-label="Về trang chủ " class="navigation__logo">
+                    <svg
+                      width="32"
+                      height="32"
+                      viewBox="0 0 24 24"
+                      class="navigation__logo-sparkle"
+                    >
+                      <g
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                      >
+                        <path
+                          d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594zM20 2v4m2-2h-4"
+                        ></path>
+                        <circle cx="4" cy="20" r="2"></circle>
+                      </g>
+                    </svg>
+                    <span class="navigation__logo-text">Clarice</span>
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      class="navigation__logo-star"
+                    >
+                      <path
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.12 2.12 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.12 2.12 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.12 2.12 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.12 2.12 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.12 2.12 0 0 0 1.597-1.16z"
+                      ></path>
+                    </svg>
+                  </div>
+                </a>
+                <button
+                  id="navigation-toggle"
+                  aria-label="Mở menu điều hướng"
+                  aria-expanded="false"
+                  aria-controls="navigation-menu"
+                  class="navigation__toggle"
+                >
+                  <svg
+                    width="28"
+                    height="28"
+                    viewBox="0 0 24 24"
+                    class="navigation-navigationtoggle-icon1 navigation__toggle-icon--open"
+                  >
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 5h16M4 12h16M4 19h16"
+                    ></path></svg
+                  ><svg
+                    width="28"
+                    height="28"
+                    viewBox="0 0 24 24"
+                    class="navigation-navigationtoggle-icon2"
+                  >
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1zm-5.5-3.5l-5 5m0-5l5 5"
+                    ></path>
+                  </svg>
+                </button>
+                <div
+                  id="navigation-menu"
+                  data-visible="false"
+                  class="navigation__menu"
+                >
+                  <div aria-hidden="true" class="navigation__magic-particles">
+                    <span class="navigation__particle"></span>
+                    <span class="navigation__particle"></span>
+                    <span class="navigation__particle"></span>
+                    <span class="navigation__particle"></span>
+                    <span class="navigation__particle"></span>
+                  </div>
+                  <ul class="navigation__list">
+                    <li class="navigation__item">
+                      <a href="#hero">
+                        <div class="navigation__link">
+                          <span class="navigation__link-text">Giới Thiệu</span>
+                          <span
+                            aria-hidden="true"
+                            class="navigation__link-glow"
+                          ></span>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="navigation__item">
+                      <a href="#timeline">
+                        <div class="navigation__link">
+                          <span class="navigation__link-text">Kinh Nghiệm</span>
+                          <span
+                            aria-hidden="true"
+                            class="navigation__link-glow"
+                          ></span>
+                        </div>
+                      </a>
+                    </li>
+
+                    <li class="navigation__item">
+                      <a href="#skills">
+                        <div class="navigation__link">
+                          <span class="navigation__link-text">Kỹ Năng</span>
+                          <span
+                            aria-hidden="true"
+                            class="navigation__link-glow"
+                          ></span>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="navigation__item">
+                      <a href="#interests">
+                        <div class="navigation__link">
+                          <span class="navigation__link-text">Sở Thích</span>
+                          <span
+                            aria-hidden="true"
+                            class="navigation__link-glow"
+                          ></span>
+                        </div>
+                      </a>
+                    </li>
+
+                    <li class="navigation__item">
+                      <a href="#footer-main">
+                        <div class="navigation__link navigation__link--cta">
+                          <span class="navigation__link-text">Liên Hệ</span>
+                          <span
+                            aria-hidden="true"
+                            class="navigation__link-glow"
+                          ></span>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+            <div class="navigation-container4">
+              <div class="navigation-container5">
+                <style>
+                  @keyframes navigation-shimmer {
+                    0% {
+                      transform: translateX(-100%);
+                    }
+                    100% {
+                      transform: translateX(100%);
+                    }
+                  }
+                  @keyframes navigation-sparkle-rotate {
+                    0%,
+                    100% {
+                      transform: rotate(0deg) scale(1);
+                    }
+                    25% {
+                      transform: rotate(-15deg) scale(1.1);
+                    }
+                    75% {
+                      transform: rotate(15deg) scale(1.1);
+                    }
+                  }
+                  @keyframes navigation-gradient {
+                    0%,
+                    100% {
+                      background-position: 0% 50%;
+                    }
+                    50% {
+                      background-position: 100% 50%;
+                    }
+                  }
+                  @keyframes navigation-star-pulse {
+                    0%,
+                    100% {
+                      transform: scale(1);
+                      opacity: 1;
+                    }
+                    50% {
+                      transform: scale(1.3);
+                      opacity: 0.7;
+                    }
+                  }
+                  @keyframes navigation-particle-float {
+                    0%,
+                    100% {
+                      opacity: 0;
+                      transform: translateY(0) scale(0);
+                    }
+                    10% {
+                      opacity: 1;
+                      transform: translateY(-10px) scale(1);
+                    }
+                    90% {
+                      opacity: 1;
+                      transform: translateY(-30px) scale(1);
+                    }
+                    100% {
+                      opacity: 0;
+                      transform: translateY(-40px) scale(0);
+                    }
+                  }
+                </style>
+              </div>
+            </div>
+            <div class="navigation-container6">
+              <div class="navigation-container7">
+                <script defer="" data-name="navigation">
+                  document.addEventListener("DOMContentLoaded", function () {
+                    (function () {
+                      const toggle =
+                        document.getElementById("navigation-toggle");
+                      const menu = document.getElementById("navigation-menu");
+                      const navLinks =
+                        document.querySelectorAll(".navigation__link");
+
+                      function closeMenu() {
+                        toggle.setAttribute("aria-expanded", "false");
+                        toggle.setAttribute("aria-label", "Mở menu điều hướng");
+                        menu.setAttribute("data-visible", "false");
+                        document.body.style.overflow = "";
+                      }
+
+                      function openMenu() {
+                        toggle.setAttribute("aria-expanded", "true");
+                        toggle.setAttribute(
+                          "aria-label",
+                          "Đóng menu điều hướng"
+                        );
+                        menu.setAttribute("data-visible", "true");
+                        document.body.style.overflow = "hidden";
+                      }
+
+                      toggle.addEventListener("click", function () {
+                        const isExpanded =
+                          toggle.getAttribute("aria-expanded") === "true";
+                        if (isExpanded) {
+                          closeMenu();
+                        } else {
+                          openMenu();
+                        }
+                      });
+
+                      navLinks.forEach(function (link) {
+                        link.addEventListener("click", function () {
+                          if (window.innerWidth <= 991) {
+                            closeMenu();
+                          }
+                        });
+                      });
+
+                      window.addEventListener("resize", function () {
+                        if (window.innerWidth > 991) {
+                          closeMenu();
+                        }
+                      });
+
+                      document.addEventListener("keydown", function (e) {
+                        if (
+                          e.key === "Escape" &&
+                          toggle.getAttribute("aria-expanded") === "true"
+                        ) {
+                          closeMenu();
+                          toggle.focus();
+                        }
+                      });
+                    })();
+                  });
+                </script>
+              </div>
+            </div>
+          </div>
+        </navigation-wrapper>
+        <section id="hero" aria-label="Hero introduction" class="hero">
+          <div class="hero-container">
+            <div class="hero-visual">
+              <img
+                src="./IMG_20250715_191758.jpg"
+                alt="image"
+                class="home-image10"
+              />
+            </div>
+            <div class="hero-content">
+              <h1 class="home-hero-title hero-title">Xuân Nghi</h1>
+              <p class="section-content hero-bio">
+                Xin chào, mình là Xuân Nghi, sinh viên năm 2 đang theo học ngành
+                CNTT tại UEH. <br />
+                Chào mừng đến với website của mình !
+              </p>
+              <div class="hero-ctas">
+                <button
+                  aria-label="View my projects"
+                  class="btn btn-primary btn-lg"
+                >
+                  <a href="#timeline">Khám phá</a>
+                </button>
+                <button aria-label="Contact me" class="btn btn-lg btn-outline">
+                  <a href="#footer-main">Theo dõi</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          id="timeline"
+          aria-label="Timeline journey"
+          class="timeline-section"
+        >
+          <video
+            aria-hidden="true"
+            autoplay="true"
+            muted="true"
+            loop="true"
+            playsinline="true"
+            src="https://videos.pexels.com/video-files/4092801/4092801-hd_1920_1080_30fps.mp4"
+            class="timeline-bg-video"
+          ></video>
+          <div class="video-scrim"></div>
+          <div class="timeline-container">
+            <div class="carousel-wrap">
+              <h2 class="card-year">Kinh nghiệm</h2>
+              <div class="carousel">
+                <article
+                  role="group"
+                  aria-labelledby="year-2022"
+                  class="timeline-card"
+                >
+                  <div class="text-backplate">
+                    <h3 id="year-2022" class="card-year">2022</h3>
+                  </div>
+                  <h4 class="card-title">Sáng tạo nội dung</h4>
+                  <p class="card-body">
+                    Viết kịch bản, hợp tác với nhóm 6 thành viên quay dựng 2
+                    phim ngắn về đề tài môi trường có yếu tố annimation.
+                  </p>
+                </article>
+                <article
+                  role="group"
+                  aria-labelledby="year-2023"
+                  class="timeline-card"
+                >
+                  <div class="text-backplate">
+                    <h3 id="year-2023" class="card-year">2023</h3>
+                  </div>
+                  <h4 class="card-title">Kinh doanh online</h4>
+                  <p class="card-body">
+                    Kinh doanh các sản phẩm handmade và có một trang bán hàng
+                    "Lumos store" trên Facebook.
+                  </p>
+                </article>
+                <article
+                  role="group"
+                  aria-labelledby="year-2024"
+                  class="timeline-card"
+                >
+                  <div class="text-backplate">
+                    <h3 id="year-2024" class="card-year">2024</h3>
+                  </div>
+                  <h4 class="card-title">Freelancer & Staff</h4>
+                  <p class="card-body">
+                    Đảm nhận công việc phiên dịch, tham gia vào team sub phim và
+                    show tiếng Trung. Đồng thời, là staff tổ chức 2 event online
+                    quy mô nhỏ.
+                  </p>
+                </article>
+                <article
+                  role="group"
+                  aria-labelledby="year-2025"
+                  class="timeline-card"
+                >
+                  <div class="text-backplate">
+                    <h3 id="year-2025" class="card-year">2025</h3>
+                  </div>
+                  <h4 class="card-title">Hiện tại</h4>
+                  <p class="card-body">
+                    Đã làm leader cho 8 dự án phiên dịch, đang đẩy mạnh phát
+                    triển kênh youtube và blog cá nhân. Mục tiêu tiếp theo: mở
+                    rộng hợp tác với nhiều bên để thực hiện các sản phẩm quy mô
+                    lớn.
+                  </p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          id="skills"
+          aria-label="Skills and strengths"
+          class="skills-section"
+        >
+          <div class="skills-container">
+            <img
+              src="./IMG_20230715_233323.jpg"
+              alt="image"
+              width="550"
+              height="auto"
+              class="home-image21"
+            />
+            <div class="home-skills-mosaic skills-mosaic">
+              <h2 class="home-hero-title hero-title">Kỹ năng</h2>
+              <article
+                role="group"
+                aria-labelledby="skill-ui"
+                class="skill-card skill-card-1"
+              >
+                <div class="skill-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                  >
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M12 22a1 1 0 0 1 0-20a10 9 0 0 1 10 9a5 5 0 0 1-5 5h-2.25a1.75 1.75 0 0 0-1.4 2.8l.3.4a1.75 1.75 0 0 1-1.4 2.8z"
+                      ></path>
+                      <circle
+                        cx="13.5"
+                        cy="6.5"
+                        r=".5"
+                        fill="currentColor"
+                      ></circle>
+                      <circle
+                        cx="17.5"
+                        cy="10.5"
+                        r=".5"
+                        fill="currentColor"
+                      ></circle>
+                      <circle
+                        cx="6.5"
+                        cy="12.5"
+                        r=".5"
+                        fill="currentColor"
+                      ></circle>
+                      <circle
+                        cx="8.5"
+                        cy="7.5"
+                        r=".5"
+                        fill="currentColor"
+                      ></circle>
+                    </g>
+                  </svg>
+                </div>
+                <h3 id="skill-ui" class="skill-title">Tư duy thẩm mỹ</h3>
+                <p class="skill-desc">
+                  Áp dụng khả năng thẩm mỹ cá nhân vào các dự án học tập, thiết
+                  kế và media.
+                </p>
+              </article>
+              <article
+                role="group"
+                aria-labelledby="skill-dev"
+                class="skill-card skill-card-2"
+              >
+                <div class="skill-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m16 18l6-6l-6-6M8 6l-6 6l6 6"
+                    ></path>
+                  </svg>
+                </div>
+                <h3 id="skill-dev" class="skill-title">Edit & Sub</h3>
+                <p class="skill-desc">
+                  Thành thạo các công cụ chỉnh sửa video, đặc biệt là Aegisub để
+                  tạo phụ đề
+                </p>
+              </article>
+              <article
+                role="group"
+                aria-labelledby="skill-brand"
+                class="home-skill-card3 skill-card skill-card-3"
+              >
+                <div class="skill-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M15 4V2m0 14v-2M8 9h2m10 0h2m-4.2 2.8L19 13m-4-4h.01m2.79-2.8L19 5M3 21l9-9m.2-5.8L11 5"
+                    ></path>
+                  </svg>
+                </div>
+                <h3 id="skill-brand" class="skill-title">Tỉ mỉ & Kiên nhẫn</h3>
+                <p class="skill-desc">
+                  Đảm bảo độ chính xác trong các sản phẩm. Kiên nhẫn trong công
+                  việc để cho ra kết quả chất lượng.
+                </p>
+              </article>
+              <article
+                role="group"
+                aria-labelledby="skill-creative"
+                class="skill-card skill-card-4"
+              >
+                <div class="skill-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M15 14c.2-1 .7-1.7 1.5-2.5c1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5c.7.7 1.3 1.5 1.5 2.5m0 4h6m-5 4h4"
+                    ></path>
+                  </svg>
+                </div>
+                <h3 id="skill-creative" class="skill-title">
+                  Giải quyết vấn đề
+                </h3>
+                <p class="skill-desc">
+                  Khả năng nhìn nhận và giải quyết vấn đề một cách nhanh chóng.
+                  Tìm ra giải pháp logic và hiệu quả dưới áp lực.
+                </p>
+              </article>
+              <article
+                role="group"
+                aria-labelledby="skill-collab"
+                class="skill-card skill-card-5"
+              >
+                <div class="skill-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                  >
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M16 3.128a4 4 0 0 1 0 7.744M22 21v-2a4 4 0 0 0-3-3.87"
+                      ></path>
+                      <circle cx="9" cy="7" r="4"></circle>
+                    </g>
+                  </svg>
+                </div>
+                <h3 id="skill-collab" class="skill-title">Quản lý cảm xúc</h3>
+                <p class="skill-desc">
+                  Thấu hiểu và làm chủ cảm xúc cá nhân. Duy trì thái độ tích
+                  cực, vui vẻ và hòa đồng trong tương tác nhóm hoặc dự án.
+                </p>
+              </article>
+              <article
+                role="group"
+                aria-labelledby="skill-learn"
+                class="skill-card skill-card-6"
+              >
+                <div class="skill-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20"
+                    ></path>
+                  </svg>
+                </div>
+                <h3 id="skill-learn" class="skill-title">Khả năng học hỏi</h3>
+                <p class="skill-desc">
+                  Nắm bắt và tiếp thu kiến thức mới nhanh. Áp dụng vào thực tế
+                  dự án.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+        <section
+          id="interests"
+          aria-label="Interests and hobbies"
+          class="interests-section"
+        >
+          <div class="interests-container">
+            <article class="interest-card interest-left">
+              <div class="interest-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="48"
+                  height="48"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-pencil-icon lucide-pencil"
+                >
+                  <path
+                    d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"
+                  />
+                  <path d="m15 5 4 4" />
+                </svg>
+              </div>
+              <h3 class="interest-title">Ngôn ngữ</h3>
+              <p class="interest-text">
+                Mình thích việc học ngôn ngữ và cảm thấy ấn tượng bởi những tác
+                phẩm chuyển ngữ hay. Những lúc "bí idea" hoặc stress trong học
+                tập, mình sẽ học ngoại ngữ. Đa số mình học qua việc phiên dịch
+                nên khá thú vị.
+              </p>
+            </article>
+            <div class="interest-central">
+              <h2 class="section-title">Sở thích</h2>
+              <article class="interest-card interest-primary">
+                <img
+                  src="./hjl.jpg"
+                  alt="Dynamic abstract painting"
+                  class="interest-bg"
+                />
+              </article>
+              <article class="interest-card interest-secondary">
+                <div class="interest-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="48"
+                    height="48"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-grid2x2-icon lucide-grid-2x2"
+                  >
+                    <path d="M12 3v18" />
+                    <path d="M3 12h18" />
+                    <rect x="3" y="3" width="18" height="18" rx="2" />
+                  </svg>
+                </div>
+                <h3 class="interest-title">Rubik</h3>
+                <p class="interest-text">
+                  Rubik cũng là sở thích khá lâu của mình. Ngoài các con rubik
+                  truyền thống mình còn thích chơi những loại rubik biến thể.
+                  Hiện tại mình đã có 1 bộ sưu tập khoảng hơn 25 rubik.
+                </p>
+              </article>
+            </div>
+            <article class="interest-card interest-right">
+              <div class="interest-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="48"
+                  height="48"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-book-heart-icon lucide-book-heart"
+                >
+                  <path
+                    d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20"
+                  />
+                  <path
+                    d="M8.62 9.8A2.25 2.25 0 1 1 12 6.836a2.25 2.25 0 1 1 3.38 2.966l-2.626 2.856a.998.998 0 0 1-1.507 0z"
+                  />
+                </svg>
+              </div>
+              <h3 class="interest-title">Tiểu thuyết</h3>
+              <p class="interest-text">
+                Mình thích đọc tiểu thuyết thiên về khai thác chiều sâu tâm lý
+                nhân vật, hoặc thể loại fanstasy như Harry Potter.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <div class="home-container15">
+          <div class="home-container16">
+            <style>
+              @keyframes float {
+                0%,
+                100% {
+                  transform: translateY(0) rotate(0deg);
+                }
+                50% {
+                  transform: translateY(-20px) rotate(5deg);
+                }
+              }
+              @keyframes shimmer {
+                0%,
+                100% {
+                  filter: brightness(1);
+                }
+                50% {
+                  filter: brightness(1.3);
+                }
+              }
+            </style>
+          </div>
+        </div>
+        <div class="home-container17">
+          <div class="home-container18">
+            <script defer="" data-name="magicpop-homepage">
+              document.addEventListener("DOMContentLoaded", function () {
+                (function () {
+                  // Hero video autoplay fallback
+                  const heroVideo = document.getElementById("hero-video");
+                  if (heroVideo) {
+                    heroVideo.play().catch((err) => {
+                      console.log("Video autoplay prevented:", err);
+                    });
+                  }
+
+                  // Smooth scroll reveal animations
+                  const observerOptions = {
+                    root: null,
+                    rootMargin: "0px",
+                    threshold: 0.1,
+                  };
+
+                  const revealCallback = (entries, observer) => {
+                    entries.forEach((entry) => {
+                      if (entry.isIntersecting) {
+                        entry.target.style.opacity = "1";
+                        entry.target.style.transform = "translateY(0)";
+                        observer.unobserve(entry.target);
+                      }
+                    });
+                  };
+
+                  const revealObserver = new IntersectionObserver(
+                    revealCallback,
+                    observerOptions
+                  );
+
+                  // Apply reveal animation to cards
+                  const cards = document.querySelectorAll(
+                    ".timeline-card, .skill-card, .interest-card, .card, .case-tile, .mosaic-tile"
+                  );
+                  cards.forEach((card) => {
+                    card.style.opacity = "0";
+                    card.style.transform = "translateY(8px)";
+                    card.style.transition = `opacity var(--animation-duration-standard) var(--animation-curve-primary), transform var(--animation-duration-standard) var(--animation-curve-primary)`;
+                    revealObserver.observe(card);
+                  });
+
+                  // Timeline carousel scroll snap enhancement
+                  const carousel = document.querySelector(".carousel");
+                  if (carousel) {
+                    let isScrolling;
+                    carousel.addEventListener("scroll", () => {
+                      window.clearTimeout(isScrolling);
+                      isScrolling = setTimeout(() => {
+                        const scrollLeft = carousel.scrollLeft;
+                        const cardWidth =
+                          carousel.querySelector(".timeline-card")
+                            ?.offsetWidth || 0;
+                        const gap =
+                          parseInt(getComputedStyle(carousel).gap) || 0;
+                        const snapPosition =
+                          Math.round(scrollLeft / (cardWidth + gap)) *
+                          (cardWidth + gap);
+                        carousel.scrollTo({
+                          left: snapPosition,
+                          behavior: "smooth",
+                        });
+                      }, 150);
+                    });
+                  }
+
+                  // CTA button interactions
+                  const ctaButtons = document.querySelectorAll(
+                    ".hero-ctas button, .cta-row button, .btn-primary"
+                  );
+                  ctaButtons.forEach((button) => {
+                    button.addEventListener("click", (e) => {
+                      const target = e.currentTarget;
+
+                      // Create ripple effect
+                      const ripple = document.createElement("span");
+                      ripple.style.position = "absolute";
+                      ripple.style.borderRadius = "50%";
+                      ripple.style.background = "rgba(255, 255, 255, 0.5)";
+                      ripple.style.width = "100px";
+                      ripple.style.height = "100px";
+                      ripple.style.marginTop = "-50px";
+                      ripple.style.marginLeft = "-50px";
+                      ripple.style.top = `${
+                        e.clientY - target.getBoundingClientRect().top
+                      }px`;
+                      ripple.style.left = `${
+                        e.clientX - target.getBoundingClientRect().left
+                      }px`;
+                      ripple.style.animation = "ripple 600ms ease-out";
+                      ripple.style.pointerEvents = "none";
+
+                      target.style.position = "relative";
+                      target.style.overflow = "hidden";
+                      target.appendChild(ripple);
+
+                      setTimeout(() => {
+                        ripple.remove();
+                      }, 600);
+                    });
+                  });
+
+                  // Add ripple animation
+                  const style = document.createElement("style");
+                  style.textContent = `
+                  @keyframes ripple {
+                    from {
+                      transform: scale(0);
+                      opacity: 1;
+                    }
+                    to {
+                      transform: scale(4);
+                      opacity: 0;
+                    }
+                  }
+                `;
+                  document.head.appendChild(style);
+
+                  // Parallax effect on scroll for hero section
+                  let ticking = false;
+                  let scrollY = 0;
+
+                  function updateParallax() {
+                    const heroVisual = document.querySelector(".hero-visual");
+                    if (
+                      heroVisual &&
+                      window.matchMedia(
+                        "(prefers-reduced-motion: no-preference)"
+                      ).matches
+                    ) {
+                      const offset = scrollY * 0.12;
+                      heroVisual.style.transform = `translateY(${offset}px)`;
+                    }
+                    ticking = false;
+                  }
+
+                  window.addEventListener("scroll", () => {
+                    scrollY = window.scrollY;
+                    if (
+                      !ticking &&
+                      window.matchMedia(
+                        "(prefers-reduced-motion: no-preference)"
+                      ).matches
+                    ) {
+                      window.requestAnimationFrame(updateParallax);
+                      ticking = true;
+                    }
+                  });
+
+                  // Gallery mosaic hover effect enhancement
+                  const mosaicTiles = document.querySelectorAll(".mosaic-tile");
+                  mosaicTiles.forEach((tile) => {
+                    tile.addEventListener("mouseenter", () => {
+                      if (
+                        window.matchMedia(
+                          "(prefers-reduced-motion: no-preference)"
+                        ).matches
+                      ) {
+                        tile.style.transition = `transform var(--animation-duration-fast) var(--animation-curve-primary), z-index 0s`;
+                        tile.style.zIndex = "10";
+                      }
+                    });
+
+                    tile.addEventListener("mouseleave", () => {
+                      if (
+                        window.matchMedia(
+                          "(prefers-reduced-motion: no-preference)"
+                        ).matches
+                      ) {
+                        tile.style.transition = `transform var(--animation-duration-fast) var(--animation-curve-primary), z-index 0s var(--animation-duration-fast)`;
+                        tile.style.zIndex = "1";
+                      }
+                    });
+                  });
+
+                  // Skills card stagger animation
+                  const skillCards = document.querySelectorAll(".skill-card");
+                  skillCards.forEach((card, index) => {
+                    card.style.transitionDelay = `${index * 0.1}s`;
+                  });
+
+                  // Contact form interaction
+                  const contactButtons = document.querySelectorAll(
+                    ".contact-section .btn"
+                  );
+                  contactButtons.forEach((button) => {
+                    button.addEventListener("focus", () => {
+                      button.style.outline = `3px solid var(--color-outline)`;
+                      button.style.outlineOffset = "2px";
+                    });
+
+                    button.addEventListener("blur", () => {
+                      button.style.outline = "none";
+                    });
+                  });
+
+                  // Initialize all videos
+                  const videos = document.querySelectorAll("video");
+                  videos.forEach((video) => {
+                    video.play().catch((err) => {
+                      console.log("Video autoplay prevented:", err);
+                    });
+                  });
+                })();
+              });
+            </script>
+          </div>
+        </div>
+        <footer-wrapper class="footer-wrapper">
+          <!--Footer component-->
+          <div class="footer-container1">
+            <div class="footer-container2">
+              <div class="footer-container3">
+                <style>
+                  @media (prefers-reduced-motion: reduce) {
+                    .footer-star,
+                    .footer-sparkle-icon,
+                    .footer-magical-quote svg,
+                    .footer-heart-icon,
+                    .footer-sparkle-small,
+                    .footer-popcorn-decoration {
+                      animation: none;
+                    }
+                    .footer-social-card:hover .footer-social-icon {
+                      transform: none;
+                    }
+                  }
+                </style>
+              </div>
+            </div>
+            <footer id="footer-main" class="footer-container">
+              <div class="footer-content-wrapper">
+                <div class="footer-top">
+                  <div class="footer-brand-section">
+                    <div class="footer-logo-wrapper">
+                      <div class="footer-sparkle-icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                        >
+                          <g
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                          >
+                            <path
+                              d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594zM20 2v4m2-2h-4"
+                            ></path>
+                            <circle cx="4" cy="20" r="2"></circle>
+                          </g>
+                        </svg>
+                      </div>
+                      <h2 class="footer-brand-name">Clarice</h2>
+                    </div>
+
+                    <div class="footer-magical-quote">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.12 2.12 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.12 2.12 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.12 2.12 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.12 2.12 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.12 2.12 0 0 0 1.597-1.16z"
+                        ></path>
+                      </svg>
+                      <span>
+                        "Hạnh phúc có thể được tìm thấy ngay cả trong những giây
+                        phút tối tăm nhất, chỉ cần ta nhớ bật đèn lên."
+                      </span>
+                    </div>
+                  </div>
+                  <div class="footer-nav-section">
+                    <div class="footer-nav-column">
+                      <h3 class="footer-nav-title">Khám Phá</h3>
+                      <ul class="footer-nav-list">
+                        <li class="footer-nav-item">
+                          <span>About me</span>
+                        </li>
+                        <li class="footer-nav-item">
+                          <span>Kinh nghiệm</span>
+                        </li>
+                        <li class="footer-nav-item">
+                          <span>Kỹ năng</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="footer-nav-column">
+                      <h3 class="footer-nav-title">Sở Thích</h3>
+                      <ul class="footer-nav-list">
+                        <li class="footer-nav-item">
+                          <span>Ngôn ngữ</span>
+                        </li>
+                        <li class="footer-nav-item">
+                          <span>Tiểu thuyết</span>
+                        </li>
+                        <li class="footer-nav-item">
+                          <span>Rubik</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="footer-nav-column">
+                      <h3 class="footer-nav-title">Kết Nối</h3>
+                      <ul class="footer-contact-list">
+                        <li class="footer-contact-item">
+                          <div class="footer-contact-icon">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                            >
+                              <g
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                              >
+                                <path
+                                  d="m22 7l-8.991 5.727a2 2 0 0 1-2.009 0L2 7"
+                                ></path>
+                                <rect
+                                  width="20"
+                                  height="16"
+                                  x="2"
+                                  y="4"
+                                  rx="2"
+                                ></rect>
+                              </g>
+                            </svg>
+                          </div>
+
+                          <span>bpxuannghi@gmail.com</span>
+                        </li>
+                        <li class="footer-contact-item">
+                          <div class="footer-contact-icon">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1 2-2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233a14 14 0 0 0 6.392 6.384"
+                              ></path>
+                            </svg>
+                          </div>
+                          <span class="footer-contact-text"> 0392883264 </span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="footer-social-section">
+                  <h3 class="footer-social-title">Theo Dõi Mình Tại</h3>
+                  <div class="footer-social-grid">
+                    <a href="#">
+                      <div aria-label="GitHub" class="footer-social-card">
+                        <div class="footer-social-icon">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                          >
+                            <g
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                            >
+                              <path
+                                d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5c.08-1.25-.27-2.48-1-3.5c.28-1.15.28-2.35 0-3.5c0 0-1 0-3 1.5c-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5c-.39.49-.68 1.05-.85 1.65S8.93 17.38 9 18v4"
+                              ></path>
+                              <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                            </g>
+                          </svg>
+                        </div>
+                        <span class="footer-social-label">GitHub</span>
+                      </div>
+                    </a>
+                    <a
+                      href="https://www.facebook.com/xuan.nghi.355744/"
+                      target="_blank"
+                      rel="noopener nopreferer"
+                    >
+                      <div aria-label="Facebook" class="footer-social-card">
+                        <div class="footer-social-icon">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="lucide lucide-facebook-icon lucide-facebook"
+                          >
+                            <path
+                              d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                            />
+                          </svg>
+                        </div>
+                        <span class="footer-social-label">Facebook</span>
+                      </div>
+                    </a>
+                    <a
+                      href="./ins.jpg"
+                      target="_blank"
+                      rel="noopener nopreferer"
+                    >
+                      <div aria-label="Instagram" class="footer-social-card">
+                        <div class="footer-social-icon">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                          >
+                            <g
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                            >
+                              <rect
+                                width="20"
+                                height="20"
+                                x="2"
+                                y="2"
+                                rx="5"
+                                ry="5"
+                              ></rect>
+                              <path
+                                d="M16 11.37A4 4 0 1 1 12.63 8A4 4 0 0 1 16 11.37m1.5-4.87h.01"
+                              ></path>
+                            </g>
+                          </svg>
+                        </div>
+                        <span class="footer-social-label">Instagram</span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="footer-divider"></div>
+                <div class="footer-bottom">
+                  <div class="footer-copyright">
+                    <span class="footer-copyright-text">
+                      © 2025 Clarice. Được tạo ra bởi Xuân Nghi
+                    </span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      class="footer-sparkle-small"
+                    >
+                      <g
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                      >
+                        <path
+                          d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594zM20 2v4m2-2h-4"
+                        ></path>
+                        <circle cx="4" cy="20" r="2"></circle>
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </footer>
+            <div class="footer-container4">
+              <div class="footer-container5">
+                <style>
+                  @keyframes footer-sparkle-pulse {
+                    0%,
+                    100% {
+                      transform: scale(1) rotate(0deg);
+                    }
+                    50% {
+                      transform: scale(1.1) rotate(5deg);
+                    }
+                  }
+                  @keyframes footer-star-rotate {
+                    0% {
+                      transform: rotate(0deg);
+                    }
+                    100% {
+                      transform: rotate(360deg);
+                    }
+                  }
+                  @keyframes footer-heart-beat {
+                    0%,
+                    100% {
+                      transform: scale(1);
+                    }
+                    25% {
+                      transform: scale(1.2);
+                    }
+                    50% {
+                      transform: scale(1);
+                    }
+                  }
+                  @keyframes footer-sparkle-float {
+                    0%,
+                    100% {
+                      transform: translateY(0) rotate(0deg);
+                    }
+                    50% {
+                      transform: translateY(-4px) rotate(180deg);
+                    }
+                  }
+                  @keyframes footer-popcorn-float {
+                    0%,
+                    100% {
+                      transform: translateY(0) scale(1);
+                    }
+                    50% {
+                      transform: translateY(-30px) scale(1.1);
+                    }
+                  }
+                </style>
+              </div>
+            </div>
+            <div class="footer-container6">
+              <div class="footer-container7">
+                <script defer="" data-name="footer">
+                  document.addEventListener("DOMContentLoaded", function () {
+                    (function () {
+                      const footerSocialCards = document.querySelectorAll(
+                        ".footer-social-card"
+                      );
+
+                      footerSocialCards.forEach((card) => {
+                        card.addEventListener("mouseenter", function () {
+                          const icon = this.querySelector(
+                            ".footer-social-icon"
+                          );
+                          if (icon) {
+                            icon.style.transition =
+                              "transform 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55)";
+                          }
+                        });
+                      });
+
+                      const footerNavLinks =
+                        document.querySelectorAll(".footer-nav-link");
+                      footerNavLinks.forEach((link) => {
+                        link.addEventListener("click", function (e) {
+                          const href = this.getAttribute("href");
+                          if (href && href.startsWith("#")) {
+                            e.preventDefault();
+                            const targetId = href.substring(1);
+                            const targetElement =
+                              document.getElementById(targetId);
+                            if (targetElement) {
+                              targetElement.scrollIntoView({
+                                behavior: "smooth",
+                                block: "start",
+                              });
+                            }
+                          }
+                        });
+                      });
+
+                      const createFloatingSparkle = () => {
+                        const footerContainer =
+                          document.getElementById("footer-main");
+                        if (!footerContainer) return;
+
+                        const sparkle = document.createElement("div");
+                        sparkle.className = "footer-star";
+                        sparkle.style.left = Math.random() * 100 + "%";
+                        sparkle.style.top = Math.random() * 100 + "%";
+                        sparkle.style.animationDelay = Math.random() * 3 + "s";
+
+                        const magicalBg =
+                          footerContainer.querySelector(".footer-magical-bg");
+                        if (magicalBg) {
+                          magicalBg.appendChild(sparkle);
+
+                          setTimeout(() => {
+                            sparkle.remove();
+                          }, 6000);
+                        }
+                      };
+
+                      setInterval(createFloatingSparkle, 3000);
+                    })();
+                  });
+                </script>
+              </div>
+            </div>
+          </div>
+        </footer-wrapper>
+      </div>
+    </div>
+  </body>
+</html>
