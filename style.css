@@ -1680,6 +1680,8 @@
 }
  
 .home-hero-title {
+  display: flex;
+  align-items: center;
   color: var(--color-on-surface);
   margin: 0;
   font-size: var(--font-size-hero);
